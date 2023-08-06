@@ -1,5 +1,6 @@
 import views from '../../assets/Images/views.svg';
 import likes from '../../assets/Images/likes.svg';
+import './Video.scss';
 
 const Video = ({videoInfo,selectedVideoCreated}) => {
 
