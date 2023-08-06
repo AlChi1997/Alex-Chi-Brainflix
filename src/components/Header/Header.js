@@ -9,7 +9,9 @@ const Header = () =>{
     return (
         <header className="header">
           <div className="header__main">
-            <img className="header__logo" src={logo} alt="BrainFlix Logo" />
+            <Link to="/">
+              <img className="header__logo" src={logo} alt="BrainFlix Logo" />
+            </Link>
           </div>
           <div className="header__submain">
             <div className="header__searchbar">
