@@ -1,7 +1,9 @@
+import {Link} from 'react-router-dom';
 import logo from '../../assets/Images/BrainFlix-logo.svg';
 import avatar from '../../assets/Images/Mohan-muruge.jpg';
 import search from '../../assets/Images/search.svg';
 import upload from '../../assets/Images/upload.svg';
+import './Header.scss';
 
 const Header = () =>{
     return (
@@ -15,10 +17,12 @@ const Header = () =>{
                 <p>Search</p>
             </div>
             <img className="header__avatar" src={avatar} alt="Moham Muruge" />
-            <div className="header__upload">
-                <img className="header__uploadImage" src={upload} alt="upload img" />
-                <p>UPLOAD</p>
-            </div>
+            <Link to="/upload">
+              <div className="header__upload">
+                  <img className="header__uploadImage" src={upload} alt="upload img" />
+                  <p>UPLOAD</p>
+              </div>
+            </Link>
           </div>
 
         </header>
