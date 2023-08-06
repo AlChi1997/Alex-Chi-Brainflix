@@ -2,29 +2,9 @@
 @import url(../../styles/partials/_fonts.scss);
 @import "../../styles/partials/mixins";
 
-.main{
-    @include desktop{
-        display:flex;
-        margin:0px 80px;
-    }
-
-    &__video{
-        @include desktop{
-            border-right:solid 1px colors.$Mercury;
-            width:90%
-        }
-    }
-}
-
-
-
 .video{
     width:100%;
 
-
-    &__player{
-        width:100%;
-    }
 
     &__title{
         margin:16px 16px 0;

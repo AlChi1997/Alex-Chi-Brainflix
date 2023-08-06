@@ -8,6 +8,10 @@
     @include tablet{
         margin:24px 24px 0;
     }
+
+    @include desktop{
+        width:30%;
+    }
     
     &__title{
         font: {
@@ -37,6 +41,13 @@
         }
     }
 
+    &__page{
+        display:flex;
+        text-decoration:none;
+        color:colors.$BrainFlix-Black;
+        gap:16px;
+    }
+
     &__img{
         border-radius:4px;
         width:100px;
@@ -57,9 +68,8 @@
         justify-content: space-between;
 
         @include tablet{
-            width:24%;
+            width:40%;
             height:70px;
-            margin-left:16px;
         }
 
         @include desktop{

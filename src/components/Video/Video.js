@@ -6,9 +6,6 @@ const Video = ({videoInfo,selectedVideoCreated}) => {
 
     return (
         <div className="video">
-            <video className="video__player" controls poster={videoInfo.image} >
-                <source src={videoInfo.video} type="video/mp4" />
-            </video>
             <div className="video__section">
                 <section className="video__info">
                     <h1 className="video__title">{videoInfo.title}</h1>

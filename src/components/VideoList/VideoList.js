@@ -6,8 +6,8 @@ const VideoList = ({videos,videoSelection}) => {
         <div className="videolist">
         <h4 className="videolist__title">NEXT VIDEOS</h4>
             {videos.map((video) => (
-                <div classname="videolist__item" key={video.id}>
-                    <Link to={`/video/${video.id}`} onClick={() => videoSelection(video.id)}>
+                <div className="videolist__item" key={video.id}>
+                    <Link className="videolist__page" to={`/video/${video.id}`} onClick={() => videoSelection(video.id)}>
                         <div className="videolist___container">
                             <img className="videolist__img" src={video.image} alt={video.title} />
                         </div>

@@ -1,0 +1,17 @@
+@use '../../styles/partials/colors';
+@import url(../../styles/partials/_fonts.scss);
+@import "../../styles/partials/mixins";
+
+.home{
+    @include desktop{
+    display:flex;
+    flex-wrap:wrap;
+    }
+
+    &__video{
+        @include desktop{
+            width:65%;
+            border-right:solid 1px colors.$Mercury;
+        }
+    }
+}

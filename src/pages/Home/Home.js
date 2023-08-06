@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import Header from '../../components/Header/Header';
+import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
 import Video from '../../components/Video/Video';
 import Form from '../../components/Form/Form';
 import VideoList from '../../components/VideoList/VideoList';
+import './Home.scss';
 
 const Home = () => {
   const [videoList, setVideoList] = useState([]);
@@ -82,10 +84,13 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className='home'>
       <Header />
-      <Video videoInfo={selectedVideo} selectedVideoCreated={selectedVideoCreated} />
-      <Form videoComments={selectedVideo.comments} formatedTimestamp={formatedTimestamp}/> 
+      <VideoPlayer videoPlayerVideo={selectedVideo}/>
+      <div className='home__video'>
+        <Video videoInfo={selectedVideo} selectedVideoCreated={selectedVideoCreated} />
+        <Form videoComments={selectedVideo.comments} formatedTimestamp={formatedTimestamp}/> 
+      </div>
       <VideoList videos={videoList.filter((video) => video.id !== selectedVideo.id)} videoSelection={handleVideoSelect} />
     </div>
   );

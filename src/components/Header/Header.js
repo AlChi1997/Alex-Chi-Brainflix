@@ -19,7 +19,7 @@ const Header = () =>{
                 <p>Search</p>
             </div>
             <img className="header__avatar" src={avatar} alt="Moham Muruge" />
-            <Link to="/upload">
+            <Link className="header__link" to="/upload">
               <div className="header__upload">
                   <img className="header__uploadImage" src={upload} alt="upload img" />
                   <p>UPLOAD</p>

@@ -1,10 +1,11 @@
 import Header from '../../components/Header/Header';
+import UploadForm from '../../components/UploadForm/UploadForm';
 
 const Upload = () => {
     return (
         <div>
             <Header />
-            <h1>Upload</h1>
+            <UploadForm />
         </div>
     );
     }
