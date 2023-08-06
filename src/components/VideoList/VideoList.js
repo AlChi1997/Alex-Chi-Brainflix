@@ -1,20 +1,24 @@
 import { Link } from 'react-router-dom';
+import './VideoList.scss';
 
 const VideoList = ({videos,videoSelection}) => {
     return (
-        <div>
-        <ul>
+        <div className="videolist">
+        <h4 className="videolist__title">NEXT VIDEOS</h4>
             {videos.map((video) => (
-                <li key={video.id}>
+                <div classname="videolist__item" key={video.id}>
                     <Link to={`/video/${video.id}`} onClick={() => videoSelection(video.id)}>
-                        <img src={video.image} alt={video.title} />
-                        <p>{video.title}</p>
-                        <p>{video.channel}</p>
+                        <div className="videolist___container">
+                            <img className="videolist__img" src={video.image} alt={video.title} />
+                        </div>
+                        <div className='videolist__information'>
+                            <h3 className='videolist__name'>{video.title}</h3>
+                            <h4 className='videolist__channel'>{video.channel}</h4>
+                        </div>
                     </Link>
-                </li>))}
-        </ul>
+                </div>
+            ))} 
         </div>
-    );
-    }
+    );}
 
 export default VideoList;
