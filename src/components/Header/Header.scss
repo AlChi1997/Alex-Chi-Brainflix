@@ -1,0 +1,121 @@
+@use '../../styles/partials/colors';
+@import url(../../styles/partials/_fonts.scss);
+@import "../../styles/partials/mixins";
+
+.header{
+    display:flex;
+    flex-wrap:wrap;
+
+    @include tablet{
+        flex-wrap:nowrap;
+        align-items:center;
+        margin:24px;
+    }
+
+    @include desktop{
+        margin:24px 120px;
+    }
+
+        &__main{
+            width:100%;
+            text-align:center;
+
+            @include tablet{
+                width:30%;
+                text-align:left;
+            }
+
+            @include desktop{
+                width:75%;
+            }
+        }
+
+        &__logo{
+            height:25px;
+            width:120px;
+            margin-top:16px;
+
+            @include tablet{
+                margin:0;
+            }
+        }
+
+        &__submain{
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            justify-content:space-between;
+            width:100%;
+            margin:16px;
+            font-size:14px;
+            font-weight:700;
+            color:colors.$BrainFlix-Black;
+
+            @include tablet{
+                flex-wrap:nowrap;
+                margin:0;
+                width:70%;
+            }
+        }
+
+        &__searchbar{
+            width:82%;
+            border:solid 1px colors.$Mercury;
+            border-radius: 4px;
+            height:40px;
+            display:flex;
+            align-items:center;
+            margin-bottom:16px;
+
+            @include tablet{
+                margin:0;
+                order:1;
+                width:50%;
+            }
+
+        }
+
+        &__searchImage{
+            width:18px;
+            height:18px;
+            padding:0 8px;
+        }
+
+        &__avatar{
+            border-radius:50%;
+            width:36px;
+            height:36px;
+            margin-bottom:16px;
+
+            @include tablet{
+                margin:0;
+                order:3;
+            }
+        }
+
+        &__upload{
+            display:flex;
+            position:relative;
+            background-color:colors.$BrainFlix-Blue;
+            width:100%;
+            height:40px;
+            border-radius:4px;
+            color:white;
+            font-size:12px;
+            line-height:20px;
+            font-weight:700;
+            align-items:center;
+            justify-content:center;
+
+            @include tablet{
+                order:2;
+                width:30%;
+            }
+        }
+
+        &__uploadImage{
+            position:absolute;
+            left:3%;
+        }
+
+}
