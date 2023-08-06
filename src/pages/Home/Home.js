@@ -85,7 +85,7 @@ const Home = () => {
     <div>
       <Header />
       <Video videoInfo={selectedVideo} selectedVideoCreated={selectedVideoCreated} />
-      <Form videoComments={selectedVideo.comments} /> 
+      <Form videoComments={selectedVideo.comments} formatedTimestamp={formatedTimestamp}/> 
       <VideoList videos={videoList.filter((video) => video.id !== selectedVideo.id)} videoSelection={handleVideoSelect} />
     </div>
   );

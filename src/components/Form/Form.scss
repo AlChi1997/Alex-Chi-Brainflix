@@ -1,0 +1,213 @@
+@use '../../styles/partials/colors';
+@import url(../../styles/partials/_fonts.scss);
+@import "../../styles/partials/mixins";
+
+.comments{
+
+    @include desktop{
+        margin-top:36px;
+    }
+
+    &__number{
+        margin:0 16px;
+        font: {
+            size:13px;
+            weight:700;
+        }
+        line-height:18px;
+
+        @include tablet{
+            margin:0 24px;
+            font-size:14px;
+            line-heihigt:22px;
+        }
+    }
+
+    &__form{
+        display:flex;
+        margin:16px 16px 0;
+        border-bottom:1px solid colors.$Mercury;
+
+        @include tablet{
+            margin:16px 24px 0px;
+            padding-bottom:24px;
+        }
+
+        @include desktop{
+            margin:0;
+            padding:16px 24px 24px;
+        }
+    }
+
+    &__avatar{
+        padding-top:16px;
+        width:20%;
+
+        @include tablet{
+            width:10%;
+            padding-top:24px;
+        }
+
+        &-img{
+            width:40px;
+            height:40px;
+            border-radius:50%;
+            margin-right:16px;
+        }
+    }
+
+    &__section{
+        width:80%;
+
+        @include tablet{
+            width:90%;
+            display:flex;
+            flex-wrap:wrap;
+        }
+    }
+
+    &__label{
+        font: {
+            size:12px;
+            weight:700;
+        }
+        line-height:20px;
+        color:colors.$Silver;
+
+        @include tablet{
+            width:100%;
+        }
+    }
+
+    &__posted{
+        margin:16px 16px 0;
+        display:flex;
+        justify-content:space-between;
+        border-bottom:1px solid colors.$Mercury;
+
+        @include tablet{
+            margin:24px 24px 0;
+        }
+
+        @include desktop{
+            margin:0;
+            padding:24px 24px 0;
+        }
+
+        &-avatar{
+            background-color:colors.$Mercury;
+            width:40px;
+            height:40px;
+            border-radius:50%;
+            float:left;
+        }
+    }
+
+    &__info{
+        width:80%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+
+        @include tablet{
+            width:90%;
+        }
+    }
+
+    &__name{
+        width:50%;
+        font: {
+            size:13px;
+            weight:700
+        }
+        line-height:18px;
+
+        @include tablet{
+            font: {
+                size:14px;
+            }
+            line-height:22px;
+        }
+
+    }
+
+    &__date{
+        width:50%;
+        font: {
+            size:13px;
+        }
+        line-height:18px;
+        text-align:end;
+        color:colors.$Silver;
+
+        @include tablet{
+            font-size:14px;
+            line-height:22px;
+        }
+    }
+
+    &__comment{
+        font: {
+            size:13px;
+        }
+        line-height:18px;
+        margin-top:8px;
+        padding-bottom:8px;
+
+        @include tablet{
+            padding-bottom:16px;
+            font-size:14px;
+            line-height:22px;
+        }
+    }
+
+}
+
+
+
+#add__comments{
+    width:100%;
+    height:100px;
+    border:2px solid colors.$Mercury;
+    border-radius:4px;
+
+    @include tablet{
+        width:70%;
+        height:40px;
+    }
+}
+
+#comments__container{
+    @include tablet{
+        width:25%;
+        margin-left:24px;
+    }
+}
+
+#comments__button{
+    position:relative;
+    width:100%;
+    height:40px;
+    background-color:colors.$BrainFlix-Blue;
+    border:none;
+    border-radius:4px;
+    color:colors.$White;
+    font: {
+        size:13px;
+        weight:700
+    }
+    line-height:20px;
+    align-items:center;
+    padding:8px;
+    margin:16px 16px 16px 0;
+    text-align:center;
+
+    @include tablet{
+        margin:0;
+    }
+
+    &-img{
+        position:absolute;
+        left:5%;
+    }
+}
