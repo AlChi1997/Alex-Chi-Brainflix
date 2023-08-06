@@ -12,6 +12,15 @@ const Home = () => {
   const { videoId } = useParams();
   const [loading, setLoading] = useState(true);
 
+  const formatedTimestamp = {
+    month: "2-digit",
+    day: "2-digit",
+    year: "numeric",
+  }
+
+  const selectedVideoCreated =
+  selectedVideo.timestamp && new Date(selectedVideo.timestamp).toLocaleString('en-US', formatedTimestamp);
+
   useEffect(() => {
     axios
       .get('https://project-2-api.herokuapp.com/videos?api_key=b5ed920b-f144-46cb-814a-24c393712b7a')
@@ -75,7 +84,7 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <Video videoInfo={selectedVideo} />
+      <Video videoInfo={selectedVideo} selectedVideoCreated={selectedVideoCreated} />
       <Form videoComments={selectedVideo.comments} /> 
       <VideoList videos={videoList.filter((video) => video.id !== selectedVideo.id)} videoSelection={handleVideoSelect} />
     </div>
