@@ -3,7 +3,7 @@
 @import "../../styles/partials/mixins";
 
 .home{
-    @include desktop{
+    @include tablet{
     display:flex;
     flex-wrap:wrap;
     }

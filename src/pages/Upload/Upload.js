@@ -3,7 +3,7 @@ import UploadForm from '../../components/UploadForm/UploadForm';
 
 const Upload = () => {
     return (
-        <div>
+        <div style={{display:"flex", flexWrap:"wrap"}}>
             <Header />
             <UploadForm />
         </div>

@@ -178,6 +178,12 @@
 }
 
 #comments__container{
+    
+    :hover{
+        background-color:colors.$BrainFlix-DarkBlue;
+        cursor:pointer;
+    }
+    
     @include tablet{
         width:25%;
         margin-left:24px;
@@ -201,6 +207,7 @@
     padding:8px;
     margin:16px 16px 16px 0;
     text-align:center;
+    
 
     @include tablet{
         margin:0;
