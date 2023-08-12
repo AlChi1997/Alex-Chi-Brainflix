@@ -33,3 +33,5 @@ const travelhealth = {
         }
     ]
 };
+
+module.exports = travelhealth;

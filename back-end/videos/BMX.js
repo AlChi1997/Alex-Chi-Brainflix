@@ -33,3 +33,5 @@ const BMX = {
         }
     ]
 };
+
+module.exports = BMX;

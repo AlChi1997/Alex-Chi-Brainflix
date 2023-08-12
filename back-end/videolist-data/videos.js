@@ -54,3 +54,5 @@ const videos = [
         "image": "https://i.imgur.com/i6S8m7I.jpg"
     }
 ];
+
+module.exports = videos;

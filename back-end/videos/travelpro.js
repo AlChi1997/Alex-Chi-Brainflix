@@ -33,3 +33,5 @@ const travelpro = {
         }
     ]
 };
+
+module.exports = travelpro;

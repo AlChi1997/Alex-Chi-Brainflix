@@ -26,3 +26,5 @@ const cruising = {
         }
     ]
 };
+
+module.exports = cruising;

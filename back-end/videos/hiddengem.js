@@ -33,3 +33,5 @@ const hiddengem = {
         }
     ]
 };
+
+module.exports = hiddengem;

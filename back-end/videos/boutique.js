@@ -33,3 +33,5 @@ const boutique = {
         }
     ]
 };
+
+module.exports = boutique;

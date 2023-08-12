@@ -33,3 +33,5 @@ const airline = {
         }
     ]
 };
+
+module.exports = airline;
