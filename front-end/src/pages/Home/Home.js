@@ -24,11 +24,13 @@ const Home = () => {
   selectedVideo.timestamp && new Date(selectedVideo.timestamp).toLocaleString('en-US', formatedTimestamp);
 
   useEffect(() => {
+
     axios
-      .get('https://project-2-api.herokuapp.com/videos?api_key=b5ed920b-f144-46cb-814a-24c393712b7a')
+      .get('http://localhost:8080/videos')
       .then((response) => {
         setVideoList(response.data);
         setSelectedVideo(response.data[0]);
+        console.log(setSelectedVideo);
         setLoading(false);
       })
       .catch((error) => {
@@ -40,9 +42,10 @@ const Home = () => {
   useEffect(() => {
     if (!videoId) {
       axios
-        .get(`https://project-2-api.herokuapp.com/videos/${selectedVideo.id}?api_key=b5ed920b-f144-46cb-814a-24c393712b7a`)
+        .get(`http://localhost:8080/videos/${selectedVideo.id}`)
         .then((response) => {
           setSelectedVideo(response.data);
+          console.log(setSelectedVideo);
           setLoading(false);
         })
         .catch((error) => {
@@ -51,7 +54,7 @@ const Home = () => {
         });
     } else {
       axios
-        .get(`https://project-2-api.herokuapp.com/videos/${videoId}?api_key=b5ed920b-f144-46cb-814a-24c393712b7a`)
+        .get(`http:localhost:8080/videos/${videoId}`)
         .then((response) => {
           setSelectedVideo(response.data);
           setLoading(false);
@@ -72,7 +75,7 @@ const Home = () => {
 
   const handleVideoSelect = (videoId) => {
     axios
-      .get(`https://project-2-api.herokuapp.com/videos/${videoId}?api_key=b5ed920b-f144-46cb-814a-24c393712b7a`)
+      .get(`http://localhost:8080/videos/${videoId}`)
       .then((response) => {
         setSelectedVideo(response.data);
         setLoading(false);
