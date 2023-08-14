@@ -2,7 +2,7 @@ const cruising = {
     "id": "99478bed-6428-49ed-8eaa-f245a5414336",
     "title": "Cruising Destination Ideas",
     "channel": "Timothy Austin",
-    "image": "http://localhost:8080//image7.jpeg",
+    "image": "http://localhost:8080/image7.jpeg",
     "description": "Do you dream of sailing in to the sunset without a care in the world? Going on a cruise can be the perfect way to make this dream come true. If you’re considering taking your very first cruise, think about the various advantages. A cruise vacation offers great value as almost everything is included, from accommodation and food to entertainment and transfers.",
     "views": "29,984",
     "likes": "2,552",
