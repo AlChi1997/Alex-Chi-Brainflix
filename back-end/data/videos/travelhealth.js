@@ -2,7 +2,7 @@ const travelhealth = {
     "id": "b6f35f03-7936-409b-bd2a-446bcc5f30e7",
     "title": "Travel Health Useful Medical Information For",
     "channel": "Glen Harper",
-    "image": "https://i.imgur.com/MMDMgD7.jpg",
+    "image": "http://localhost:8080//image3.jpeg",
     "description": "Concerned about your health while travelling? You should know that international travellers should always be extra concerned about their health and safety. This video provides essential information on travel health risks and preventive measures to keep you and your loved ones safe during your travels.",
     "views": "739,945",
     "likes": "98,352",

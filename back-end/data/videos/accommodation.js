@@ -2,7 +2,7 @@ const accomodation = {
     "id": "fc5261d1-58a0-47e4-9c19-2b7a1715fa1b",
     "title": "Choose the Perfect Accommodations",
     "channel": "Lydia Perez",
-    "image": "https://i.imgur.com/0hi3N4B.jpg",
+    "image": "http://localhost:8080//image6.jpeg",
     "description": "Worried about finding the perfect travel accommodations? There are many things to consider when booking an accommodation. Consider picking the right location. Location is an important consideration for an enjoyable stay. Check the rating and price. Consider apartment or condo rentals. Weigh the food options. Is it family-friendly? Watch for extra fees. Assess the on-site amenities.",
     "views": "252,796",
     "likes": "4,905",

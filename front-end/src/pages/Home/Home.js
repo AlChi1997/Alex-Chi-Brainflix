@@ -13,6 +13,7 @@ const Home = () => {
   const [selectedVideo, setSelectedVideo] = useState({});
   const { videoId } = useParams();
   const [loading, setLoading] = useState(true);
+  axios.defaults.baseURL = 'http://localhost:8080';
 
   const formatedTimestamp = {
     month: "2-digit",
@@ -26,7 +27,7 @@ const Home = () => {
   useEffect(() => {
 
     axios
-      .get('http://localhost:8080/videos')
+      .get('/videos')
       .then((response) => {
         setVideoList(response.data);
         setSelectedVideo(response.data[0]);
@@ -42,7 +43,7 @@ const Home = () => {
   useEffect(() => {
     if (!videoId) {
       axios
-        .get(`http://localhost:8080/videos/${selectedVideo.id}`)
+        .get(`/videos/${selectedVideo.id}`)
         .then((response) => {
           setSelectedVideo(response.data);
           console.log(setSelectedVideo);
@@ -54,7 +55,7 @@ const Home = () => {
         });
     } else {
       axios
-        .get(`http:localhost:8080/videos/${videoId}`)
+        .get(`/videos/${videoId}`)
         .then((response) => {
           setSelectedVideo(response.data);
           setLoading(false);
@@ -75,7 +76,7 @@ const Home = () => {
 
   const handleVideoSelect = (videoId) => {
     axios
-      .get(`http://localhost:8080/videos/${videoId}`)
+      .get(`/videos/${videoId}`)
       .then((response) => {
         setSelectedVideo(response.data);
         setLoading(false);

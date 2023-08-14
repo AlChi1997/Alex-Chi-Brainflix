@@ -2,6 +2,11 @@ import { Link } from 'react-router-dom';
 import './VideoList.scss';
 
 const VideoList = ({videos,videoSelection}) => {
+
+    console.log(videos);
+
+    console.log(videos[0].img);
+
     return (
         <div className="videolist">
         <h4 className="videolist__title">NEXT VIDEOS</h4>

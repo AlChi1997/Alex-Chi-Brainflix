@@ -2,7 +2,7 @@ const boutique = {
     "id": "9c268c0a-83dc-4b96-856a-bb5ded2772b1",
     "title": "Take A Romantic Break In A Boutique Hotel",
     "channel": "Ethan Owen",
-    "image": "https://i.imgur.com/7rD6Mf6.jpg",
+    "image": "http://localhost:8080//image5.jpeg",
     "description": "Your loved one has been dreaming about a romantic getaway with you, if you want to bring the spark back into your relationship this is the place to go! Small and design-forward, boutique hotels promise a more intimate vacation stay, each one chock-full of character while offering plenty of inimitable features (from exposed brick to panoramic ocean views)",
     "views": "345,987",
     "likes": "76,588",
