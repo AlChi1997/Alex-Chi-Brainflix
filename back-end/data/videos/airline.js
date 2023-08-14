@@ -2,7 +2,7 @@ const airline = {
     "id": "1b964601-a6dd-4fcc-b5f3-1000338c9557",
     "title": "Cheap Airline Tickets Great Ways To Save",
     "channel": "Emily Harper",
-    "image": "http://localhost:8080//image4.jpeg",
+    "image": "http://localhost:8080/image4.jpeg",
     "description": "Want to know how to get cheap flights? This video has great tips on how to book the cheapest flight possible to anywhere in the world. Remember, Keep your searches top secret. Use the best flight search engines. Identify the cheapest day to fly out. Fly for free with points. Befriend budget airlines. Search for airline error and sale fares. Book connecting flights yourself for less. ",
     "views": "72,342",
     "likes": "8,785",

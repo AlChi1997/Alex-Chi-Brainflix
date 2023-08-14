@@ -2,7 +2,7 @@ const hiddengem = {
     "id": "25ce5d91-a262-4dcf-bb87-42b87546bcfa",
     "title": "Les Houches The Hidden Gem Of The Chamonix",
     "channel": "Cornelia Blair",
-    "image": "http://localhost:8080//image2.jpeg",
+    "image": "http://localhost:8080/image2.jpeg",
     "description": "Les Houches, located 6 kilometres from Chamonix, is a ski resort with a domain which extends from an altitude of 950 metres up to 1900 metres. Long descents through tree-lined slopes are combined with impressive views of the Mont Blanc massif and the Chamonix valley. Les Houches is twinned with the Russian villages of Sochi and Krasnaya-Polyana and was chosen by the International Olympic Committee to assist in the organization of the 2014 Winter Olympic Games. Watch for more fun facts!",
     "views": "16,950",
     "likes": "3,856",
