@@ -2,7 +2,7 @@ const travelpro = {
     "id": "c05b9a93-8682-4ab6-aff2-92ebb4bbfc14",
     "title": "Become A Travel Pro In One Easy Lesson",
     "channel": "Todd Welch",
-    "image": "http://localhost8080/image1.jpeg",
+    "image": "http://localhost:8080/image1.jpeg",
     "description": "Luxury is something everyone deserves from time to time. Such an indulgence can make a vacation a truly rejuvenating experience. This video will focus a lot on helping the first time or inexperienced traveler head out prepared and confident in themselves.",
     "views": "2,043,765",
     "likes": "400,058",

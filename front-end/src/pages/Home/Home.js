@@ -25,7 +25,6 @@ const Home = () => {
   selectedVideo.timestamp && new Date(selectedVideo.timestamp).toLocaleString('en-US', formatedTimestamp);
 
   useEffect(() => {
-
     axios
       .get('/videos')
       .then((response) => {
