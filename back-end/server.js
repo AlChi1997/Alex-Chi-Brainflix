@@ -39,6 +39,16 @@ app.get('/videos/:id', (req, res) => {
   }
 });
 
+app.post('/videos', (req, res) => {
+    const id = req.body.id;
+    const title = req.body.title;
+    const description = req.body.description;
+    const image = req.file;
+
+    res.json({
+        message: 'Video uploaded successfully'});
+});
+
 app.listen(port, () => {
     console.log("listening on port 8080");
 });
