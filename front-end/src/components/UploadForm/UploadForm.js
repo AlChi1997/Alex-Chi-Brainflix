@@ -44,13 +44,12 @@ const UploadForm = () => {
 
 
         console.log(formData);
-        console.log("FormData: ", Object.fromEntries(formData));
-        console.log("FormData Serialized: ", JSON.stringify(Object.fromEntries(formData)));
 
         axios
             .post('http://localhost:8080/videos', formData)
             .then((response) => {
                 alert('Video uploaded successfully');
+                window.location.href = '/';
             })
             .catch((error) => {
                 alert('Error uploading video');

@@ -45,6 +45,11 @@ app.post('/videos', (req, res) => {
     const description = req.body.description;
     const image = req.file;
 
+    if (!id || !title || !description || !image) {
+        res.status(400).json({ message: 'Please fill out all required fields' });
+        return;
+    }
+
     res.json({
         message: 'Video uploaded successfully'});
 });
