@@ -3,21 +3,24 @@ const app = express();
 const port = process.env.PORT || process.argv[2] || 8080;
 const { v4: uuidv4 } = require('uuid');
 const cors = require('cors');
-const videos = require('./videolist-data/videos');
-const accomodation = require('./videos/accommodation');
-const cruising = require('./videos/cruising');
-const airline = require('./videos/airline');
-const bmx = require('./videos/bmx');
-const boutique = require('./videos/boutique');
-const hiddengem = require('./videos/hiddengem');
-const train = require('./videos/train');
-const travelhealth = require('./videos/travelhealth');
-const travelpro = require('./videos/travelpro');
+const path = require('path');
+const videos = require('./data/videolist-data/videos');
+const accomodation = require('./data/videos/accommodation');
+const cruising = require('./data/videos/cruising');
+const airline = require('./data/videos/airline');
+const bmx = require('./data/videos/bmx');
+const boutique = require('./data/videos/boutique');
+const hiddengem = require('./data/videos/hiddengem');
+const train = require('./data/videos/train');
+const travelhealth = require('./data/videos/travelhealth');
+const travelpro = require('./data/videos/travelpro');
 const allVideos = [accomodation, cruising, airline, bmx, boutique, hiddengem, train, travelhealth, travelpro];
 
 app.use(express.json());
 
 app.use(cors());
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/videos', (req, res) => {
     //send videos array as JSON response
